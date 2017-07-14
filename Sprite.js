@@ -84,7 +84,7 @@ Sprite.prototype.mover = function (map, dt) {
   var min_x = Math.max(0,this.gx-1);
   var max_x = Math.min(Math.floor(canvas.width/40),this.gx+1);
   var min_y = Math.max(0,this.gy-1);
-  var max_y = Math.min(Math.floor(canvas.width/40),this.gy+1);
+  var max_y = Math.min(Math.floor(canvas.height/40),this.gy+1);
   minas = 0;
   tesouro = 0;
   for(var i = min_y; i <= max_y; ++i){
